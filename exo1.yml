@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: Ping API
+  description: Simple API with a single /ping endpoint
+  version: 1.0.0
+paths:
+  /ping:
+    get:
+      summary: Responds with "pong"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "pong"
